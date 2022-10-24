@@ -7,8 +7,8 @@ jobs:
     steps:
      - run: echo "Job1 is ok!"
      - run: echo "Job1 is done!"
-   Job2:
+  Job2:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Job2 is ok!"
-      - run: echo "Job2 is also ok!"
+     - run: echo "Job1 is ok!"
+     - run: echo "Job1 is done!"
