@@ -1,0 +1,14 @@
+name: Behzad Action Test
+run-name: ${{ github.actor }} has pushed something
+on: [push]
+jobs:
+  Job1:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "Job1 is ok!"
+     - run: echo "Job1 is done!"
+   Job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Job2 is ok!"
+      - run: echo "Job2 is also ok!"
