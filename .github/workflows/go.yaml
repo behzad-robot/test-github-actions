@@ -1,0 +1,24 @@
+name: Go!
+run-name: ${{ github.actor }} is GO!!!💀
+on: [push]
+jobs:
+  Success:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.15
+      - name: Run GO
+        run: go run . password
+  Fail:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.15
+      - name: Run GO
+        run: go run .
